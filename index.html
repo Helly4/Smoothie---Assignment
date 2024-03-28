@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smoothie Order Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="background-image">
+    <div class="content">
+      <h1>Smoothie Order Form</h1>
+      <form id="smoothie-form">
+        <label for="flavor">Choose a flavor:</label>
+        <select id="flavor" name="flavor">
+          <option value="Strawberry">Strawberry</option>
+          <option value="Banana">Banana</option>
+          <option value="Mango">Mango</option>
+          <option value="Mixed Berry">Mixed Berry</option>
+        </select><br>
+
+        <label for="size">Select size:</label>
+        <input type="radio" id="small" name="size" value="Small">
+        <label for="small">Small</label>
+        <input type="radio" id="medium" name="size" value="Medium">
+        <label for="medium">Medium</label>
+        <input type="radio" id="large" name="size" value="Large">
+        <label for="large">Large</label><br>
+
+        <label for="extras">Extras (select multiple):</label>
+        <select id="extras" name="extras" multiple>
+          <option value="Protein Powder">Protein Powder</option>
+          <option value="Chia Seeds">Chia Seeds</option>
+          <option value="Spinach">Spinach</option>
+          <option value="Almond Milk">Almond Milk</option>
+        </select><br>
+
+        <label for="notes">Additional Notes:</label><br>
+        <textarea id="notes" name="notes" rows="4" cols="50"></textarea><br>
+
+        <button type="submit">Order</button>
+      </form>
+
+      <div id="smoothie-output"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
